@@ -1,0 +1,17 @@
+# Configuration ReddawnBan
+# Modifiable a chaud dans plugins/ReddawnBan/config.yml apres un /reload
+# (ou un redemarrage du serveur si tu n'as pas de commande de reload).
+
+api:
+  # URL de base de l'API Laravel. Ne PAS mettre de slash final.
+  # En local (Herd) : http://api.test/api
+  # En prod : https://ton-domaine.fr/api
+  url: "http://api.test/api"
+
+  # Token Bearer partage avec l'API. A copier depuis le .env Laravel
+  # (variable API_TOKEN). Sans ca, tous les appels recoivent un 401.
+  token: ""
+
+  # Delai max d'attente d'une reponse de l'API, en secondes.
+  # Au-dela, la requete echoue avec HttpTimeoutException.
+  timeout-seconds: 10
