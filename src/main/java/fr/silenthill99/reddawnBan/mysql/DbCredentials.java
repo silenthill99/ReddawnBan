@@ -16,6 +16,7 @@ public class DbCredentials {
         this.password = password;
     }
 
+    public String toURL() {
         return "jdbc:mysql://" + host + ":" + port + "/" + dbName;
     }
 
