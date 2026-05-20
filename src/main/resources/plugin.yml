@@ -2,5 +2,5 @@ name: ReddawnBan
 version: '${version}'
 
 main: fr.silenthill99.reddawnBan.Main
-api-version: '1.21.1'
+api-version: 1.21
 load: POSTWORLD
